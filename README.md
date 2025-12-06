@@ -1,7 +1,7 @@
 # Unsupervised Emotional Clustering and Visualization of Stray Kids' Discography
 An end-to-end NLP pipeline that analyzes the music artist, Stray Kids' entire 7-year Korean discography (scraped from Genius API) by clustering Korean/English lyrics into emotional themes using TF-IDF vectorization and unsupervised learning through K-Means. This project auto-generates interpretable cluster labels using a Groq-hosted LLM, builds a emotional timeline over the group's career from 2018-2025, and visualizes thematic trends and patterns using Matplotlib and Seaborn. Prior to clustering, I used VADER for sentiment analysis to provide baseline polarity scores scores for each song, allowing comparison between traditional sentiment scoring and unsupervised clustering. 
 
-**IMPORTANT NOTE** This project's code can also be analyzed any music artist's emotional trends, making it customizable and accessible to anyone who simply enjoys music, even if they don't know programming.
+** This project's code can also be analyzed any music artist's emotional trends, making it customizable and accessible to anyone who simply enjoys music, even if you don't know programming**
 
 # Tech Stack
 Languages + Tools
@@ -63,3 +63,22 @@ Data Visualization
 - LLM-Generated Cluster Names powered by Groq’s LLaMA 3.3–70B for interpretable emotional categories.
 - Temporal Analysis showing how Stray Kids’ lyrical emotions evolved across their 7-year career.
 - Clear Visualizations including sentiment trends, cluster timelines, and distribution plots.
+
+# Installation and Setup
+1. Clone repository
+- git clone https://github.com/steawinfdox-png/skz-nlp-clustering.git
+- cd skz-nlp-clustering
+2. Create virtual env.
+- python -m venv venv
+- source ven/bin/activate (macOS/Linux)
+- venv\Scripts\activate (Windows)
+3. Install dependencies
+- pip install -r requirements.txt
+4. Set up environmental variables
+- GROQ_API_KEY
+- GENIUS_API_KEY
+
+# Customization Options
+1. Open src/scraping.py
+2. Change "artist_name" to your preferred music artist
+3. Launch JupyterLab
