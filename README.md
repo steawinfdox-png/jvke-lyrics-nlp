@@ -107,7 +107,7 @@ Attached are several visualizations that help interpret the emotional structure 
 
 1. [Color-coded 2D PCA Cluster Map of TF-IDF Vectors]
 (visualizes how songs associate together based on lyrical similarity and shows clear separation between emotional themes)
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/dfd1eb45-be19-4766-b6b0-01b621567643" />
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f9335f33-86c3-4113-855b-029861bf3feb" />
 
 2. [Emotional Timeline]
 (line-graph visualization highlighting how emotional cluster themes rise and fall in song frequency over Stray Kids' 7-year career)
