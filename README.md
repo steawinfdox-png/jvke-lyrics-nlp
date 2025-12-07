@@ -24,7 +24,7 @@ LLM's
 Data Visualization
 - Matplotlib (Emotional timeline)
 - Seaborn (Trend visuals)
-- Plotly (Scatterplot distribution)
+- Plotly (2D PCA cluster distribution)
 
 # Pipeline Overview
 
@@ -99,5 +99,12 @@ Data Visualization
 - Throughout Stray Kids' entire 7-year career, songs with cluster names with high-energy ("Empowered Rising Spirit" and "Self Empowerment through Adversity") consistently dominated annual theme rankings
 - Since 2021-2022, however, has "Self Empowerment through Adversity" dropped significantly in frequency, leaving songs in the "Empowered Rising Spirit" cluster to be the No. 1 cluster theme for Stray Kids
 4. Cluster Geometry
-- All clusters were relatively close together in the 2D PCA, suggesting the embeddings didn't create meaningful variation
+- All clusters were relatively distanced from each other in the 2D PCA, suggesting the embeddings creating meaningful variation
 - Such a uniform distribution implies a strong thematic cohesion across Stray Kids' discography even with completely different thematic classifications
+
+# Visualizations
+Attached are several visualizations that help interpret the emotional structure and trends of Stray Kids' 7-year discography
+
+1. 2D PCA Cluster Map of color-coded TF-IDF vectors
+- This plot visualizes how songs associate together based on lyrical similarity and shows clear separation between emotional themes
+- 
