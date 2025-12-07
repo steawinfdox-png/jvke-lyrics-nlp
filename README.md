@@ -82,3 +82,22 @@ Data Visualization
 1. Open src/scraping.py
 2. Change "artist_name" to your preferred music artist
 3. Launch JupyterLab
+
+# Results
+1. Emotional Clusters
+- The K-Means model (k=5) produced clusters that were semantically consistent when inspected qualitatively
+- Groq-hosted LLM cluster names closely matched the lyrical tone and vocabulary of each respective cluster:
+   - Unstoppable Inner Strength
+   - Self-Empowerment through Adversity
+   - Youthful Energy Explosion
+   - Empowered Rising Spirit
+   - Longing and Heartache
+2. Sentiment Distribution
+- VADER sentiment analysis showed dominance of positive polarity scored songs
+- Negative sentiment correlated with songs with lyrics about personal struggle and isolation
+3. Temporal Analysis
+- Throughout Stray Kids' entire 7-year career, songs with cluster names with high-energy ("Empowered Rising Spirit" and "Self Empowerment through Adversity") consistently dominated annual theme rankings
+- Since 2021-2022, however, has "Self Empowerment through Adversity" dropped significantly in frequency, leaving songs in the "Empowered Rising Spirit" cluster to be the No. 1 cluster theme for Stray Kids
+4. Cluster Geometry
+- All clusters were relatively close together in the 2D PCA, suggesting the embeddings didn't create meaningful variation
+- Such a uniform distribution implies a strong thematic cohesion across Stray Kids' discography even with completely different thematic classifications
