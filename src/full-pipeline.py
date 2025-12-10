@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+# imports
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -13,10 +14,13 @@ sia = SentimentIntensityAnalyzer()
 from sklearn.model_selection import train_test_split
 from sentence_transformers import SentenceTransformer
 
+# CUSTOMIZATION
 artist_name = "INSERT_PREFERRED_ARTIST"
-cluster_count = "INSERT_PREFERRED_CLUSTER_NO."
+number_songs = "INSERT_HOW_MANY_SONGS_YOU_WANT_TO_ANALYZE --> Remove quotation marks (ex: number_songs = 75)"
+cluster_count = "INSERT_PREFERRED_CLUSTER_NUMBER --> Remove quotation marks (ex: cluster_count = 5)"
 genius_api_token = "INSERT_YOUR_TOKEN"
-#ENTER GROQ API TOKEN BELOW ON LINE 160!
+your_groq_key ="INSERT_YOUR_TOKEN"
+
 
 # genius api info
 genius = lyricsgenius.Genius(
@@ -28,10 +32,9 @@ genius = lyricsgenius.Genius(
     excluded_terms = ['Remix', 'Version']
 )
 
-
+#scrape_genius_for_StrayKids_songs
 data = []
 scores = []
-#scrape_genius_for_StrayKids_songs
 def get_jvke(limit=500):
     artist = genius.search_artist(artist_name, max_songs=limit, sort="title")
     for song in artist.songs:
@@ -46,7 +49,7 @@ def get_jvke(limit=500):
     df.to_csv("jvke2.csv", index=False, encoding="utf-8")
     print("Saved:", len(df), "songs")
     return df
-get_jvke(360)
+get_jvke(number_songs)
 
 df = pd.read_csv("jvke2.csv")
 
@@ -157,7 +160,7 @@ cluster_keywords
 
 from groq import Groq
 
-client = Groq(api_key="INSERT_YOUR_TOKEN")
+client = Groq(api_key = your_groq_key)
 cluster_names = {}
 #auto-generate cluster names using Groq-hosted LLM
 for c in sorted(df["Cluster"].unique()):
@@ -216,9 +219,8 @@ fig = px.scatter(
     height=780,
     width=920
 )
-
 #fix title position
-fig.update_layout(title_text="Stray Kids Discography Cluster Map (TF-IDF vector projection, color-coded by cluster)", title_x=0.5)
+fig.update_layout(title_text = artist_name + " Discography Cluster Map (TF-IDF vector projection, color coded by cluster)", title_x=0.5)
 fig.show()
 
 import seaborn as sns
@@ -230,15 +232,9 @@ plt.figure(figsize=(6,6))
 sns.lineplot(data=timeline, x = "Year", y = "Count", hue = "Cluster Names", marker = "o")
 plt.xlim(left=2018)
 plt.xlim(right=2025)
-plt.title("Stray Kids Song Topics over Time")
+plt.title(f"{artist_name} Song Topics over Time")
 plt.legend(loc="upper right", bbox_to_anchor=(1.8, 1), ncol=1)
-plt.show
-
-#plot numerical frequency of all clusters
-plt.figure(figsize=(7,5))
-df["Emotional Scale"].value_counts().plot(kind="bar")
-plt.title("Stray Kids Songs by Predominant Emotion")
-plt.show
+plt.show()
 
 import matplotlib.pyplot as plt
 # Count songs per cluster
@@ -247,10 +243,15 @@ cluster_counts = df["Cluster"].value_counts().sort_index()
 labels = [cluster_names[c] for c in cluster_counts.index]
 plt.figure(figsize=(10, 5))
 plt.bar(labels, cluster_counts.values)
-plt.title("Song Count per Emotional Cluster")
+plt.title(f"{artist_name} Song Count per Emotional Cluster")
 plt.xlabel("Emotional Cluster")
 plt.ylabel("Number of Songs")
-
 plt.xticks(rotation=45, ha='right')
 plt.tight_layout()
+plt.show()
+
+#plot traditional VADER analysis scores
+plt.figure(figsize=(7,5))
+df["Emotional Scale"].value_counts().plot(kind="pie")
+plt.title(f"{artist_name} Songs by Predominant Emotion")
 plt.show()
