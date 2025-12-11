@@ -74,9 +74,13 @@ Data Visualization
 - Clear Visualizations including sentiment trends, cluster timelines, and distribution plots.
 
 # How to Use Cluster Beats
-1. Open src/scraping.py
-2. Change "artist_name" to your preferred music artist
-3. Launch JupyterLab
+1. Install dependencies
+   a. pip install -r requirements.txt
+3. Open src/FULL_PIPELINE.py
+4. Change "artist_name" to your preferred music artist, as well as customize other variables (note: you need to get tokens for Genius API and Groq API)
+5. Run pipeline in JupyterLab
+   a. File --> New --> Terminal
+   b. Enter and run "python main.py"
 
 # Requirements
 - pandas
