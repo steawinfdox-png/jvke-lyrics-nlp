@@ -9,13 +9,13 @@ Lyrics change. Artists grow. But there's no easy way to track how an artist real
 Cluster Beats gives us truly meaningful snapshots of an artist's discography, grouping songs by themes through unsupervised learning, before finally visualizing these themes and how they change/shift over time. This end-to-end NLP pipeline is my way of combining my love for both programming and music, and helping others do the same. Music isn't simply positive and negative, and our tools to analyze music shouldn't be, either.
 
 ## How it works (pipeline overview)
-1. 🎼 Scrape Song Metadata & Lyrics
+🎼 Scrape Song Metadata & Lyrics
 > Pull complete music artist discography using the Genius API
 > Store song titles, release dates, and full lyrics for analysis
-2. 🧹 Preprocess Lyrics
+🧹 Preprocess Lyrics
 * Clean and normalize text (lowercase, remove punctuation, remove stopwords)
 * Filter out metadata brackets
-3. 😊 Sentiment Pre-Analysis (VADER)
+😊 Sentiment Pre-Analysis (VADER)
 * Generate compound polarity score for each song
 * Classify into positive, neutral, or negative to visualize mood trends as supportive supplemental data
 4. 🔢 Vectorize Lyrics (TF-IDF)
