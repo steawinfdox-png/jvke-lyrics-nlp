@@ -15,7 +15,7 @@ Cluster Beats gives us truly meaningful snapshots of an artist's discography, gr
 
 🧹 Preprocess Lyrics
 > Clean and normalize text (lowercase, remove punctuation, remove stopwords)
-> Filter out metadata brackets
+Filter out metadata brackets
   
 🤗 Sentiment Pre-Analysis (VADER)
 - Generate compound polarity score for each song
