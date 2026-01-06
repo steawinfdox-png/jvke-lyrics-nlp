@@ -65,7 +65,6 @@ For demonstration, I've used Cluster Beats to analyze the K-Pop boyband, Stray K
 3. Change "artist_name" to your preferred music artist, as well as customize other variables (note: you need to get tokens for Genius API and Groq API)
 4. Run pipeline in JupyterLab
    > File --> New --> Terminal
-   > 
    > Enter and run "python main.py"
 
 📦 **Requirements**
