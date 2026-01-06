@@ -41,25 +41,24 @@ For demonstration, I've used Cluster Beats to analyze the K-Pop boyband, Stray K
 * Genius API (lyric scraping, song title and release date extraction)
 * Requests (API communication)
 
-🧠 Natural Language Processing
+**Natural Language Processing**
 
 * NLTK (song tokenization)
 * scikit-learn (TF-IDF vectorization, K-Means unsupervised clustering)
 * VADER (sentiment analysis via polarity scoring)
 
-🤖 LLM's
+**LLM's**
 
 * Groq API (automated cluster naming)
 * Llama-3.3-70B (label generation)
 
-📈 Data Visualization
+**Data Visualization**
 
 * Matplotlib (Emotional timeline)
 * Seaborn (Trend visuals)
 * Plotly (2D PCA cluster distribution)
 
-⚙️ **How to Use Cluster Beats**
-
+**How to Use Cluster Beats**
 1. Install dependencies
    a. pip install -r requirements.txt
 2. Open src/FULL_PIPELINE.py
@@ -70,15 +69,24 @@ For demonstration, I've used Cluster Beats to analyze the K-Pop boyband, Stray K
 
 📦 **## Requirements**
 
-* pandas
-* numpy
-* scikit-learn
-* matplotlib
-* seaborn
-* nltk
-* python-dotenv
-* requests
-* groq
+> pandas
+> 
+> numpy
+> 
+> scikit-learn
+> 
+> matplotlib
+> 
+> seaborn
+> 
+> nltk
+> 
+> python-dotenv
+> 
+> requests
+> 
+> groq
+> 
 
 🌟 **Key Features**
 
