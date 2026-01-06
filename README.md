@@ -17,23 +17,19 @@ For demonstration, I've used Cluster Beats to analyze the K-Pop boyband, Stray K
 🖼️ **Visualizations**
 📎 Attached are several visualizations that help interpret the emotional structure and trends of Stray Kids' 7-year discography
 
-[Color-coded 2D PCA Cluster Map of TF-IDF Vectors]
-   (visualizes how songs associate together based on lyrical similarity and shows clear separation between emotional themes)
+## Color-coded 2D PCA Cluster Map of TF-IDF Vectors
 
    <img width="1225" height="910" alt="image" src="https://github.com/user-attachments/assets/643de493-c9be-4d03-9fcd-c745167f3372" />
   
-[Emotional Timeline]
-   (line-graph visualization highlighting how emotional cluster themes rise and fall in song frequency over Stray Kids' 7-year career)
+## Emotional Timeline
 
    <img width="1131" height="679" alt="Timeline" src="https://github.com/user-attachments/assets/bc318f10-6e62-4542-a824-54e7041873e8" />
 
-[Theme Frequency Chart]
-   (shows actual number-based freqency of all clusters from entire discography)
+## Theme Frequency Chart
 
    <img width="1304" height="630" alt="Screenshot (189)" src="https://github.com/user-attachments/assets/7bc1bb72-526e-4e48-831d-5f9048eaa701" />
 
-[VADER Sentiment Analysis]
-   (traditional pre-clustering pos-neg-neu classifications)
+## VADER Sentiment Analysis
 
    <img width="597" height="526" alt="Pie" src="https://github.com/user-attachments/assets/7ad6047a-cb4b-4d07-b9a5-f09cd6096535" />
 
