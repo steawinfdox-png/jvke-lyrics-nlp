@@ -30,13 +30,13 @@ For demonstration, I've used Cluster Beats to analyze the K-Pop boyband, Stray K
 
    <img width="597" height="526" alt="Pie" src="https://github.com/user-attachments/assets/7ad6047a-cb4b-4d07-b9a5-f09cd6096535" />
 
-🧰 **Tech Stack**
-🧪 Languages + Tools
+## Tech Stack
 
+**Languages + Tools**
 * Python (data analysis, visualization, NLP, clustering)
 * JupyterLab (interactive dev.)
 
-📡 Data Extraction
+**Data Extraction**
 
 * Genius API (lyric scraping, song title and release date extraction)
 * Requests (API communication)
