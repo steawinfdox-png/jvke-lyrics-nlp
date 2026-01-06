@@ -14,7 +14,7 @@ Cluster Beats is a customizable end-to-end NLP pipeline that first scrapes song,
 ## Demo
 For demonstration, I've used Cluster Beats to analyze the K-Pop boyband, Stray Kids' entire discography from 2018-2025, to provide interested users a clear example how Cluster Beats works to analyze your favorite artist. (Click [here](https://github.com/steawinfdox-png/Cluster-Beats/tree/main/notebooks) for more)
 
-### Color-coded 2D PCA Cluster Map of TF-IDF Vectors
+### Color-coded 2D PCA Cluster Map of TF-IDF Vectors (w/ Groq-generated labels)
 
    <img width="1225" height="910" alt="image" src="https://github.com/user-attachments/assets/643de493-c9be-4d03-9fcd-c745167f3372" />
   
@@ -80,10 +80,10 @@ For demonstration, I've used Cluster Beats to analyze the K-Pop boyband, Stray K
 9. groq
 
 ## Conclusion
-This project demonstrates how custom NLP methods (TF-IDF vectorization, clustering, and keyword-based emotion classification) can reveal deeper, more nuanced emotional patterns across Stray Kids’ discography than traditional sentiment tools. While VADER provides a broad positive/negative/neutral sentiment score, it often oversimplifies complex emotional tones, especially in music where themes like empowerment, vulnerability, chaos, longing, and ambition coexist within similar songs and reduces them to simply "positive", "negative", and "neutral" keywords. In contrast, the project’s custom emotion/theme pipeline captures these multilayered dynamics, producing a detailed emotional timeline and cluster map that more accurately reflects the group’s artistic evolution and versatility. Together, these insights highlight how domain-specific NLP can uncover emotional narratives that general-purpose sentiment models fail to detect, making this approach far more effective for analyzing lyrical content than traditional sentiment analysis software.
+This project demonstrates how custom NLP methods (TF-IDF vectorization, clustering, and keyword-based emotion classification) can reveal deeper, more nuanced emotional patterns across Stray Kids’ discography than traditional sentiment tools. While VADER provides a broad positive/negative/neutral sentiment score, it often oversimplifies complex emotional tones, especially in music where themes like empowerment, vulnerability, chaos, longing, and ambition coexist within similar songs and reduces them to simply "positive", "negative", and "neutral" keywords. In striking contrast, Cluster Beats' deeper analysis pipeline captures these multilayered dynamics, producing a detailed emotional timeline and cluster map that more accurately reflects musicians' artistic evolution and versatility. Together, these insights highlight how domain-specific NLP can uncover emotional narratives that general-purpose sentiment models fail to detect, making this approach far more effective for analyzing lyrical content than traditional sentiment analysis software.
 
 ## Journal
-I initially attempted to use an OpenAI-hosted LLM to auto-generate cluster names, but I ran out of free credits and my requests greatly exceeded the hourly limit, leading to various, prolonged errors in my code. After several attempts to remedy the issue, I instead opted to use the simpler-to-integrate Groq-hosted LLM.
+I initially attempted to use an OpenAI-hosted LLM to auto-generate cluster names, but I ran out of free credits and my requests greatly exceeded the hourly limit, leading to various, prolonged errors in my code. As a result, I opted to use the simpler-to-integrate Groq-hosted LLM, instead.
 
 # Contact Me!
 If you've got any suggestions or recommendations, feel free to email me at [steawinfdox@gmail.com](mailto:steawinfdox@gmail.com)!
