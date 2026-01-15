@@ -1,6 +1,13 @@
 <h1 align = "center"> Cluster Beats </h1>
 <p align = "center"> NLP-powered analysis of public music discographies </p>
 
+<div align = "center">
+
+# Cluster Beats
+
+**Songs decoded. Artists understood. Pure ML**
+[![License](https://img.shields.io/badge/license-MIT-blue)]()
+
 ### Get your Genius API key: https://docs.genius.com/#/getting-started-h1
 ### Get your Groq API key: https://console.groq.com/keys
 
